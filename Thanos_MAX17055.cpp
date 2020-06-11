@@ -271,7 +271,7 @@ float Thanos_MAX17055::getTemp() {
 /**************************************************************************/
 float Thanos_MAX17055::getTTE() {	
 	int16_t valueDec = getTTE_raw();
-  return valueDec * timeMultiplyer ;	
+  return valueDec * Thanos_MAX17055::timeMultiplyer ;	
 }
 
 /*! 
@@ -280,7 +280,7 @@ float Thanos_MAX17055::getTTE() {
 /**************************************************************************/
 float Thanos_MAX17055::getTTF() {	
 	int16_t valueDec = getTTF_raw();
-  return valueDec * timeMultiplyer ;	
+  return valueDec * Thanos_MAX17055::timeMultiplyer ;	
 }
 
 void Thanos_MAX17055::reset() {

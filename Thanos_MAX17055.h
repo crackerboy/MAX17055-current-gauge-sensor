@@ -155,4 +155,7 @@ class Thanos_MAX17055{
   int16_t getTemp_raw(void);
   int16_t getTTE_raw(void);
   int16_t getTTF_raw(void);
+
+  //Least Significant Bit= 5.625 seconds, 3600 converts it to Hours. refer to AN6358 pg 13 figure 1.3 in row "Time"
+  const float timeMultiplyer = 5.625/3600.0; 
 };
